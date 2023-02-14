@@ -41,7 +41,7 @@ span {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     .container {
         display: flex;
         flex-direction: column-reverse;
@@ -95,14 +95,14 @@ nav a:hover:before,
 nav i:hover:before  {
     width: 100%;
 }
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     nav {
         margin: -10px 0 0 -330px;
         gap: 0px;
     }
 
 }
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     nav a {
         font-size: large;
         padding: 0 4px 12px 10px;
@@ -158,18 +158,18 @@ nav i:hover:before  {
     border: none;
     text-transform: uppercase;
 }
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     .video button {
         width: fit-content;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     .video .text button {
         margin-left: 5px;
         font-size: medium;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     .video .text h2 {
         margin-top: 20px;
         font-size: medium;
@@ -216,7 +216,7 @@ button {
     filter: hue-rotate(310deg);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     button {
         margin-top: -15px;
         margin-left: 106px;
@@ -264,7 +264,7 @@ button {
     padding-left: 25px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     #myPopMenu {
         margin-top: 3px;
         margin-left: 98px;
@@ -293,18 +293,18 @@ table {
     margin-left: 80px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     table {
         position: relative;
         margin: 0 130px 40px 5.5px;
     }
 
 }
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     svg {
         position: absolute;
         left: 69px;
-        top: -16px;
+        top: 42px;
         width: 35%;
         height: 100%;
     }
@@ -332,7 +332,37 @@ table th {
     border-radius: 8%;
 }
 
+/* End Table */
+/* Start bmc-wbtn */
 
+#bmc-wbtn {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 64px; 
+    height: 64px; 
+    background: rgb(146, 227, 215); 
+    color: white; 
+    border-radius: 32px; 
+    position: fixed; 
+    right: 20px; 
+    bottom: 20px; 
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px; 
+    z-index: 9999; 
+    cursor: pointer; 
+    font-weight: 600; 
+    transition: all 0.2s ease 0s; 
+    transform: scale(1);
+}
+
+#bmc-wbtn img {
+    height: 40px; 
+    width: 40px; 
+    margin: 0; 
+    padding: 0;
+}
+/* End bmc-wbtn */
+/* ---------------------------------------------------------------------------------------------- */
 /* .e {
     height: 35px;
     margin: 270px 10px 0px 0px;
@@ -367,5 +397,3 @@ table th {
 .e:nth-child(2) {
     filter: hue-rotate(310deg);
 } */
-
-/* End Table */
