@@ -36,12 +36,12 @@ span {
     flex-direction: row-reverse;
     justify-content: center;
     background-color: #ebeced;
-    /* background-image: url(landing2.jpg);
+    /* background-image: url(header.svg);
     background-size: cover; */
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     .container {
         display: flex;
         flex-direction: column-reverse;
@@ -95,14 +95,14 @@ nav a:hover:before,
 nav i:hover:before  {
     width: 100%;
 }
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     nav {
-        margin: -10px 0 0 -330px;
+        margin: -10px 0 0 -320px;
         gap: 0px;
     }
 
 }
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     nav a {
         font-size: large;
         padding: 0 4px 12px 10px;
@@ -158,18 +158,18 @@ nav i:hover:before  {
     border: none;
     text-transform: uppercase;
 }
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     .video button {
         width: fit-content;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     .video .text button {
         margin-left: 5px;
         font-size: medium;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     .video .text h2 {
         margin-top: 20px;
         font-size: medium;
@@ -216,10 +216,10 @@ button {
     filter: hue-rotate(310deg);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     button {
         margin-top: -15px;
-        margin-left: 106px;
+        margin-left: 113px;
     }
 }
 #myPopMenu ul {
@@ -264,10 +264,10 @@ button {
     padding-left: 25px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     #myPopMenu {
         margin-top: 3px;
-        margin-left: 98px;
+        margin-left: 106px;
     }
 }
 /* End Button */
@@ -293,17 +293,17 @@ table {
     margin-left: 80px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     table {
         position: relative;
-        margin: 0 130px 40px 5.5px;
+        margin: 0 130px 40px 7.5px;
     }
 
 }
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     svg {
         position: absolute;
-        left: 69px;
+        left: 76px;;
         top: 42px;
         width: 35%;
         height: 100%;
@@ -362,6 +362,21 @@ table th {
     padding: 0;
 }
 /* End bmc-wbtn */
+/* Start Footer */
+.footer {
+    padding: 30px 10px;
+    background-color:  #2c4755;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.footer span {
+    font-weight: bold;
+    color: #10cab7;
+}
+
+/* End Footer */
 /* ---------------------------------------------------------------------------------------------- */
 /* .e {
     height: 35px;
