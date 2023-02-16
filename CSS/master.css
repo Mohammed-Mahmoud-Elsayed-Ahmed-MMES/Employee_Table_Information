@@ -41,7 +41,7 @@ span {
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 767px) {
     .container {
         display: flex;
         flex-direction: column-reverse;
@@ -95,14 +95,14 @@ nav a:hover:before,
 nav i:hover:before  {
     width: 100%;
 }
-@media (max-width: 360px) {
+@media (max-width: 767px) {
     nav {
         margin: -10px 0 0 -330px;
         gap: 0px;
     }
 
 }
-@media (max-width: 360px) {
+@media (max-width: 767px) {
     nav a {
         font-size: large;
         padding: 0 4px 12px 10px;
@@ -158,18 +158,18 @@ nav i:hover:before  {
     border: none;
     text-transform: uppercase;
 }
-@media (max-width: 360px) {
+@media (max-width: 767px) {
     .video button {
         width: fit-content;
     }
 }
-@media (max-width: 360px) {
+@media (max-width: 767px) {
     .video .text button {
         margin-left: 5px;
         font-size: medium;
     }
 }
-@media (max-width: 360px) {
+@media (max-width: 767px) {
     .video .text h2 {
         margin-top: 20px;
         font-size: medium;
@@ -216,7 +216,7 @@ button {
     filter: hue-rotate(310deg);
 }
 
-@media (max-width: 360px) {
+@media (max-width: 767px) {
     button {
         margin-top: -15px;
         margin-left: 106px;
@@ -264,7 +264,7 @@ button {
     padding-left: 25px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 767px) {
     #myPopMenu {
         margin-top: 3px;
         margin-left: 98px;
@@ -293,14 +293,14 @@ table {
     margin-left: 80px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 767px) {
     table {
         position: relative;
         margin: 0 130px 40px 5.5px;
     }
 
 }
-@media (max-width: 360px) {
+@media (max-width: 767px) {
     svg {
         position: absolute;
         left: 69px;
