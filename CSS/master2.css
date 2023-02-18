@@ -110,8 +110,8 @@ nav i:hover:before  {
 }
 @media (max-width: 767px) {
     nav a {
-        font-size: x-large;
-        padding: 0 4px 12px 10px;
+        font-size: larger;
+        padding: 0 4px 9px 10px;
     }
 
 }
@@ -184,7 +184,7 @@ nav i:hover:before  {
 @media (max-width: 767px) {
     .video .text h2 {
         margin-top: 20px;
-        /* font-size: medium; */
+        font-size: large;
     }
 }
 
@@ -280,7 +280,7 @@ button {
 @media (max-width: 767px) {
     #myPopMenu {
         margin-top: 3px;
-        margin-left: 137px;
+        margin-left: 110px;
     }
 }
 /* End Button */
@@ -310,8 +310,8 @@ table {
     table {
         position: relative;
         /* width: auto; */
-        right: 64px;
-        font-size: large;
+        right: 71px;
+        font-size: medium;
         /* margin: 0 130px 40px 7.5px; */
     }
 
