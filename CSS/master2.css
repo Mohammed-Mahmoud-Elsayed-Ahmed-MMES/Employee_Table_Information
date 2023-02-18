@@ -24,9 +24,9 @@ html {
 body {
     opacity: 90%;
     font-family: 'Caveat', cursive;
-    width: fit-content;
+    /* width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0; */
     text-align: center;
 }
 
@@ -101,7 +101,8 @@ nav i:hover:before  {
 }
 @media (max-width: 767px) {
     nav {
-        margin: 0px 0 0 -243px;
+        margin: 0px 0 0 -333px;
+        gap: 0px;
         /* margin: -10px 0 0 -320px;
         gap: 0px; */
     }
@@ -163,6 +164,12 @@ nav i:hover:before  {
     border: none;
     text-transform: uppercase;
 }
+@media (max-width: 767px) {
+    .video .text {
+        background-color: initial;
+    }
+}
+
 @media (max-width: 767px) {
     .video button {
         width: fit-content;
@@ -256,7 +263,7 @@ button {
     color: #0c0c0cfc;
     font-weight: bolder;
     margin: 2px;
-    padding: 3px 5px 10px 15px;
+    padding: 3px 0px 10px 0px;
     transition: var(--main-duration);
     z-index: 1;
     
@@ -273,7 +280,7 @@ button {
 @media (max-width: 767px) {
     #myPopMenu {
         margin-top: 3px;
-        margin-left: 106px;
+        margin-left: 137px;
     }
 }
 /* End Button */
@@ -302,9 +309,9 @@ table {
 @media (max-width: 767px) {
     table {
         position: relative;
-        width: auto;
-        right: 40px;
-        font-size: x-large;
+        /* width: auto; */
+        right: 64px;
+        font-size: large;
         /* margin: 0 130px 40px 7.5px; */
     }
 
@@ -313,7 +320,7 @@ table {
     svg {
         /* position: relative; */
         left: 88px;
-        top: 53px;
+        top: -27px;
         width: 30%;
         /* left: 71px;
         top: 114px;
