@@ -105,7 +105,7 @@ nav i:hover:before  {
 @media (max-width: 360px) {
     nav a {
         font-size: large;
-        padding: 0 4px 12px 10px;
+        padding: 0 4px 9px 10px;
     }
 
 }
