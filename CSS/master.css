@@ -4,6 +4,7 @@
     --c-active-inner: #FFFFFF;
     --c-default: #D2D6E9;
     --c-default-dark: #C7CBDF;
+    --transparent-color: rgb(15 116 143 / 70%);
     --c-black: #1B1B22;
     --main-duration: 0.5s;
 }
@@ -97,7 +98,7 @@ nav i:hover:before  {
 }
 @media (max-width: 360px) {
     nav {
-        margin: -10px 0 0 -320px;
+        margin: -10px 0 0 -335px;
         gap: 0px;
     }
 
@@ -105,7 +106,7 @@ nav i:hover:before  {
 @media (max-width: 360px) {
     nav a {
         font-size: large;
-        padding: 0 4px 9px 10px;
+        padding: 0 4px 7px 10px;
     }
 
 }
