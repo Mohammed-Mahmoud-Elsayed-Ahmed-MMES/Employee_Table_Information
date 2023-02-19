@@ -98,7 +98,7 @@ nav i:hover:before  {
 }
 @media (max-width: 360px) {
     nav {
-        margin: -10px 0 0 -345px;
+        margin: -10px 0 0 -355px;
         gap: 0px;
     }
 
