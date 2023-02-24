@@ -327,8 +327,10 @@ button {
 
 @media (max-width: 767px) {
     #myPopMenu {
-        margin-top: 3px;
-        margin-left: 126px;
+        margin: 3px auto 0;
+        width: 40%;
+        /* margin-top: 3px;
+        margin-left: 126px; */
     }
 }
 /* End Button */
@@ -367,6 +369,7 @@ table {
 @media (max-width: 767px) {
     svg {
         /* position: relative; */
+        display: none;
         left: -19px;
         top: 70px;
         width: 35%;
