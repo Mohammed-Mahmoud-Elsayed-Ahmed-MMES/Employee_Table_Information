@@ -1,3 +1,5 @@
 master.css => Suits my phone frame
 BUT 
 master2.css => Suits some phones frame
+BUT
+master3.css => Suits most phones frame
