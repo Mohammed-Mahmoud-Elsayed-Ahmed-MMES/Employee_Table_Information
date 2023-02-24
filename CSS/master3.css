@@ -1,0 +1,481 @@
+/* Start Global Rules */
+:root {
+    --c-active: #f51659;
+    --c-active-inner: #FFFFFF;
+    --c-default: #D2D6E9;
+    --c-default-dark: #C7CBDF;
+    --c-black: #1B1B22;
+    --transparent-color: rgb(15 116 143 / 70%);
+    --main-duration: 0.5s;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    opacity: 90%;
+    font-family: 'Caveat', cursive;
+    /* width: 100%;
+    padding: 0;
+    margin: 0; */
+    text-align: center;
+}
+
+/* End Global Rules */
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background-color: #ebeced;
+    width: 100%;
+    text-align: center;
+    /* background-image: url(header.svg);
+    background-size: cover; */
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        /* margin: 10px; */
+    }
+
+}
+
+/* Start Header */
+header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+nav {
+    width: 100%;
+    /* display: flex;
+    flex-direction: row; */
+    /* gap: 40px; */
+    /* margin: 10px 0px 0 130px;
+    transform: translate(340px, 20px); */
+}
+nav a {
+    /* display: block; */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px 8px;
+    margin: 0 5px;
+    font-size: x-large;
+}
+nav i {
+    /* position: relative;
+    top: -23px; */
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    padding-top: 24px;
+}
+
+/* .before {
+    position: absolute;
+    background-color: transparent;
+    margin-top: 23px;
+    margin-left: -18px;
+    height: 3px;
+    width: 20px;
+}
+
+nav i:hover+.before:hover {
+    margin-left: -12px;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+} */
+
+nav a:before/*,
+nav i:before */  {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width var(--main-duration);
+}
+/* nav i:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width var(--main-duration);
+} */
+nav a:hover:before/*,
+nav i:hover:before*/  {
+    width: 95%;
+}
+@media (max-width: 767px) {
+    nav {
+        padding: 15px 0 2px;
+        margin: -12px 0 0 -13px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    nav a {
+        font-size: large;
+        padding: 3px 4px 6px 10px;
+    }
+
+}
+@media (max-width: 767px) {
+    nav i {
+        padding-top: 8px;
+        padding-left: 5px;
+    }
+
+}
+/* End Header */
+/* start video */
+.video {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* Because we cut the part that is outside the background of the image because we moved it down  - 150 pixels */
+    overflow: hidden;
+}
+
+.video::before {
+    content: "";
+    /* We took it from the overly above to do it again here */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 40%);
+}
+
+.video video {
+    width: 100%;
+    text-align: center;
+}
+
+.video .text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    background-color: var(--transparent-color);
+    color: white;
+    text-align: center;
+}
+.video video,
+.video .text {
+    /* To make them above the background */
+    z-index: 2;
+    /* To be in the center together */
+    flex: 1;
+}
+.video .text h2 {
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.video .text p {
+    margin-bottom: 30px;
+}
+
+.video .text button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase;
+}
+@media (max-width: 767px) {
+    .video .text {
+        padding: 4px;
+    }
+}
+
+@media (max-width: 767px) {
+    .video button {
+        width: fit-content;
+    }
+}
+@media (max-width: 767px) {
+    .video .text button {
+        margin-left: 5px;
+        font-size: medium;
+    }
+}
+@media (max-width: 767px) {
+    .video .text h2 {
+        margin-top: 20px;
+        font-size: large;
+    }
+}
+
+/* End Video */
+/* Start Button */
+button {
+    /* float: right;
+    right: 185px; */
+    height: 35px;
+    margin: 182px 10px 0px 6px;
+    cursor: pointer;
+    appearance: none;
+    border-color: black;
+    position: relative;
+    color: black;
+    outline: none;
+    font-size: 17px;
+    line-height: 5px;
+    font-weight: 600;
+    width: 132px;
+    text-align: center;
+    border-radius: 7px;
+    padding: 12px 0;
+    background-color: #dadcf0;
+    /* background-image: url('https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871'); */
+    background-image: url(nav-bg-fill-blue.png);
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 1.5s ease;
+}
+
+.container button:hover {
+    background-position: center;
+    color: white;
+    border: none;
+    background-color: #c0d4d8;;
+    --duration: .45s;
+}
+
+.container button:nth-child(1) {
+    filter: hue-rotate(310deg);
+}
+
+@media (max-width: 767px) {
+    button {
+        margin-top: -15px;
+        /* margin-left: 113px; */
+        font-size: larger;
+    }
+}
+#myPopMenu ul {
+    list-style-type: none;
+    width: 105px;
+    margin-left: 20px;
+    z-index: 1;
+    /* position: absolute;
+    list-style: none;
+    margin-left: 22px;
+    padding: 0;
+     */
+}
+#myPopMenu ul::before {
+    content: " ";
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent #f9f9f9 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+#myPopMenu a {
+    display: block;
+    /* border-radius: 50%; */
+    background-color: #e9e9e9;
+    text-decoration: none;
+    color: #0c0c0cfc;
+    font-weight: bolder;
+    margin: 2px;
+    padding: 3px 0px 10px 0px;
+    transition: var(--main-duration);
+    z-index: 1;
+    
+}
+#myPopMenu ul li:not(:last-child) a {
+    /* To make a line */
+    border-bottom: 1px solid #949494;
+}
+#myPopMenu a:hover {
+    transition: var(--main-duration);
+    padding-left: 25px;
+}
+
+@media (max-width: 767px) {
+    #myPopMenu {
+        margin-top: 3px;
+        margin-left: 126px;
+    }
+}
+/* End Button */
+
+/* Start Table */
+
+svg {
+    position: absolute;
+    left: 420px;
+    top: 830px;
+    width: 15%;
+    height: 50%;
+}
+table {
+    width: 70%;
+    height: 70%;
+    border: 2px solid #CCC;
+    border-spacing: 1px;
+    border-radius: 2%;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px 0;
+    position: relative;
+    margin-left: 80px;
+}
+
+@media (max-width: 767px) {
+    table {
+        position: relative;
+        width: auto;
+        /* right: 53px; */
+        font-size: medium;
+        margin: 0 0 50px 0;
+    }
+
+}
+@media (max-width: 767px) {
+    svg {
+        /* position: relative; */
+        left: -19px;
+        top: 70px;
+        width: 35%;
+        height: 100%;
+        /* left: 71px;
+        top: 114px;
+        width: 35%; */
+    }
+
+}
+table caption {
+    margin: 80px auto 50px;
+    font-size: xxx-large;
+    /* padding-top: 90px; */
+}
+
+table thead td {
+    background-color: #534f48;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    border-color: #b8cac8;
+    border-radius: 25%;
+}
+
+table th {
+    padding: 15px;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+    border-radius: 8%;
+}
+
+/* End Table */
+/* Start bmc-wbtn */
+
+#bmc-wbtn {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 64px; 
+    height: 64px; 
+    background: rgb(146, 227, 215); 
+    color: white; 
+    border-radius: 32px; 
+    position: fixed; 
+    right: 20px; 
+    bottom: 20px; 
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px; 
+    z-index: 9999; 
+    cursor: pointer; 
+    font-weight: 600; 
+    transition: all 0.2s ease 0s; 
+    transform: scale(1);
+}
+
+#bmc-wbtn img {
+    height: 40px; 
+    width: 40px; 
+    margin: 0; 
+    padding: 0;
+}
+/* End bmc-wbtn */
+/* Start Footer */
+.footer {
+    padding: 30px 10px;
+    background-color:  #2c4755;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.footer span {
+    font-weight: bold;
+    color: #10cab7;
+}
+
+/* End Footer */
+/* ---------------------------------------------------------------------------------------------- */
+/* .e {
+    height: 35px;
+    margin: 270px 10px 0px 0px;
+    cursor: pointer;
+    appearance: none;
+    border-color: black;
+    position: relative;
+    color: black;
+    outline: none;
+    font-size: 17px;
+    line-height: 5px;
+    font-weight: 600;
+    width: 132px;
+    text-align: center;
+    border-radius: 7px;
+    padding: 12px 0;
+    background-color: #86bdbb;
+    background-image: url('https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871');
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 1.5s ease;
+}
+
+.e:hover {
+    background-position: center;
+    color: white;
+    border: none;
+    background-color: #a17434;
+    --duration: .45s;
+}
+
+.e:nth-child(2) {
+    filter: hue-rotate(310deg);
+} */
