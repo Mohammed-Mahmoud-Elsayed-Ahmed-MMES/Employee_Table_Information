@@ -27,12 +27,31 @@
 }*/
 
 
+/*addButton.onclick = function()
+{
+    console.log("hkkkkk");
+    newCell.textContent = 'This is a new cell';
+    newRow.appendChild(newCell);
+    newRow.appendChild(newCell);
+    newRow.appendChild(newCell);
+    newRow.appendChild(newCell);
+    table.appendChild(newRow);
+}*/
+
+
 const table = document.querySelector('#table');
 const addButton = document.querySelector('#add'); 
 const li1 = document.querySelector('#li1'); 
 const li2 = document.querySelector('#li2'); 
 const li3 = document.querySelector('#li3'); 
 const li4 = document.querySelector('#li4'); 
+const body = document.querySelector('body'); 
+var bodyWidth = parseInt(window.getComputedStyle(body).width); // IMPORTANT Why we use this 
+// 1- Comparing strings instead of numbers: In JavaScript, when comparing values using the <= and >= 
+// operators, they perform a lexicographic (dictionary) comparison when used with strings. This means that "767px" is considered smaller than "416px" because the character '7' comes before '4' in the ASCII character set. To compare the numerical values, you should remove the "px" suffix and convert the values to numbers.
+// 2- Retrieving the style property from body: The code snippet uses body.style.width to access the 
+// width of the body element. However, the style property only returns the inline styles applied directly to the element. It won't work if the width is defined in an external CSS file or applied using a class. To get the current computed width, you can use window.getComputedStyle(body).width instead.
+
 const localStorage = window.localStorage;
 
 addButton.addEventListener('click', () => {
@@ -42,6 +61,15 @@ addButton.addEventListener('click', () => {
     const idInput = document.createElement('input');
     idInput.type = 'text';
     idInput.name = 'id';
+    if(bodyWidth <= 767 && bodyWidth >= 416){
+        idInput.style.width = '65px';
+    }else if(bodyWidth <= 415 && bodyWidth >= 396){
+        idInput.style.width = '49.6px';
+    }else if(bodyWidth <= 395 && bodyWidth >= 361){
+        idInput.style.width = '46.3px';
+    }else if(bodyWidth <= '360px'){
+        idInput.style.width = '46px';
+    }
     idInput.style.padding = '15px';
     idInput.style.fontWeight = 'bold';
     idInput.style.textAlign = 'center';
@@ -54,6 +82,15 @@ addButton.addEventListener('click', () => {
     const nameInput = document.createElement('input');
     nameInput.type = 'text';
     nameInput.name = 'name';
+    if(bodyWidth <= 767 && bodyWidth >= 416){
+        nameInput.style.width = '65px';
+    }else if(bodyWidth <= 415 && bodyWidth >= 396){
+        nameInput.style.width = '111.89px';
+    }else if(bodyWidth <= 395 && bodyWidth >= 361){
+        nameInput.style.width = '103.8px';
+    }else if(bodyWidth <= '360px'){
+        nameInput.style.width = '103.4px';
+    }
     nameInput.style.padding = '15px';
     nameInput.style.fontWeight = 'bold';
     nameInput.style.textAlign = 'center';
@@ -66,6 +103,15 @@ addButton.addEventListener('click', () => {
     const phoneInput = document.createElement('input');
     phoneInput.type = 'text';
     phoneInput.name = 'phone';
+    if (bodyWidth <= 767 && bodyWidth >= 416) {
+        phoneInput.style.width = '65px';
+    } else if (bodyWidth <= 415 && bodyWidth >= 396) {
+        phoneInput.style.width = '104.04px';
+    } else if (bodyWidth <= 395 && bodyWidth >= 361) {
+        phoneInput.style.width = '96.7px';
+    } else if (bodyWidth <= 360) {
+        phoneInput.style.width = '96.35px';
+    }
     phoneInput.style.padding = '15px';
     phoneInput.style.fontWeight = 'bold';
     phoneInput.style.textAlign = 'center';
@@ -78,6 +124,15 @@ addButton.addEventListener('click', () => {
     const addressInput = document.createElement('input');
     addressInput.type = 'text';
     addressInput.name = 'address';
+    if(bodyWidth <= 767 && bodyWidth >= 416){
+        addressInput.style.width = '65px';
+    }else if(bodyWidth <= 415 && bodyWidth >= 396){
+        addressInput.style.width = '122.44px';
+    }else if(bodyWidth <= 395 && bodyWidth >= 361){
+        addressInput.style.width = '105.33px';
+    }else if(bodyWidth <= '360px'){
+        addressInput.style.width = '95.01px';
+    }
     addressInput.style.padding = '15px';
     addressInput.style.fontWeight = 'bold';
     addressInput.style.textAlign = 'center';
@@ -183,4 +238,3 @@ popMenu.appendChild(item2);
 
 // Add the menu to the page
 document.body.appendChild(popMenu);
-
